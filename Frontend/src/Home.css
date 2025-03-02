@@ -1,0 +1,99 @@
+/* Full-screen background image */
+body {
+    background-image: url('https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Title styling with slide-in animation */
+.title {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #FAF3E0;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.8);
+    margin-top: -75px;
+    animation: slideIn 1.5s ease-out forwards;
+    transform: translateY(100px);
+}
+
+/* Button styling with hover effects */
+.btn-custom {
+    display: block;
+    margin: 0 auto;
+    margin-top: 120px;
+    padding: 18px 35px;
+    font-size: 1.4rem;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.4s ease;
+    opacity: 0;
+    animation: fadeIn 1.8s ease-out forwards;
+    animation-delay: 0.5s;
+    transform: translateY(100px);
+    box-shadow: 0 10px 30px rgba(255, 111, 97, 0.4);
+}
+
+.btn-custom:hover {
+    background-color: #d74b2e;
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 15px 40px rgba(215, 75, 46, 0.6);
+}
+
+.btn-custom:focus {
+    outline: none;
+}
+
+/* Hover effect for background fade */
+.btn-custom:hover {
+    background-color: #f17d6a;
+}
+
+/* Keyframe Animations */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Adding a subtle animation to the background */
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+body {
+    animation: backgroundAnimation 20s linear infinite;
+}
+
+.title a{
+    text-decoration: none;
+}

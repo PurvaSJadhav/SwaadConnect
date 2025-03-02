@@ -1,0 +1,43 @@
+.f-info {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    background-color: #efdada;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  /* Distributes items evenly */
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.f-info-socials, 
+.f-info-links, 
+.f-info-brand, 
+.f-info-created {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto; /* Allows flexible width instead of 100% */
+    gap: 1rem; /* Adds space between inline elements */
+}
+
+.f-info-socials i {
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.f-info-socials i:hover {
+    font-size: 1.6rem;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+    margin: 0 -0.3rem; /* Adds space between Privacy & Terms */
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
